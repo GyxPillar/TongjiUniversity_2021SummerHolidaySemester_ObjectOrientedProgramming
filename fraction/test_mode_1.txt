@@ -1,0 +1,79 @@
+模式一测试 (此部分内容输出于控制台和文件)
+
+一、单目运算测试
+
+相反数Inverse测试:
+f1 = 1/10 , want : f1.Inverse() = -1/10 , out : f1.Inverse() = -1/10
+f2 = -2/7 , want : f2.Inverse() =   2/7 , out : f2.Inverse() = 2/7
+f3 =  0/3 , want : f3.Inverse() =   0/3 , out : f3.Inverse() = 0/2
+f4 =  2/6 , want : f4.Inverse() =  -6/2 , out : f4.Inverse() = -2/6
+
+求倒数Reciprocal测试:
+f1 = 1/10 , want : f1.Reciprocal() =      10/1 , out : f1.Reciprocal() = 10/1
+f2 = -2/7 , want : f2.Reciprocal() =      -7/2 , out : f2.Reciprocal() = -7/2
+f3 =  0/3 , want : f3.Reciprocal() = ERROR(0/1), out : f3.Reciprocal() = 0/2
+f4 =  2/6 , want : f4.Reciprocal() =       6/2 , out : f4.Reciprocal() = 6/2
+
+求约分Reduction测试:
+f1 = 1/10 , want : f1.Reduction() = 1/10 , out : f1.Reduction() = 1/10
+f2 = -2/7 , want : f2.Reduction() = -2/7 , out : f2.Reduction() = -2/7
+f3 =  0/3 , want : f3.Reduction() =  0/3 , out : f3.Reduction() = 0/2
+f4 =  2/6 , want : f4.Reduction() =  1/3 , out : f4.Reduction() = 1/3
+
+DtoF小数转分数测试:
+want : ff1 = 1/10 , out : ff1 = 1/10
+want : ff2 = -1/2 , out : ff2 = -1/2
+want : ff3 =  0/2 , out : ff3 = 0/2
+
+StoF字符串转分数测试:
+want : ff4 = 1/10 , out : ff4 = 1/10
+want : ff5 = -1/2 , out : ff5 = -1/2
+want : ff6 =  0/3 , out : ff6 = 0/2
+
+二、双目运算测试
+
+运算符 + 测试:
+want : f1 + f2 = -13/70 ,out : f1 + f2 = -13/70
+want : f1 + f3 =   1/10 ,out : f1 + f3 = 1/10
+want : f1 + f4 =  13/30 ,out : f1 + f4 = 13/30
+
+运算符 - 测试:
+want : f1 - f2 = 27/70 ,out : f1 - f2 = 27/70
+want : f1 - f3 =  1/10 ,out : f1 - f3 = 1/10
+want : f1 - f4 = -7/30 ,out : f1 - f4 = -7/30
+
+运算符 * 测试:
+want : f1 * f2 = -1/35 ,out : f1 * f2 = -1/35
+want : f1 * f3 =  0/2  ,out : f1 * f3 = 0/2
+want : f1 * f4 =  1/30 ,out : f1 * f4 = 1/30
+
+运算符 / 测试:
+want : f1 / f2 = -7/20 ,out : f1 / f2 = -7/20
+want : f1 / f3 = ERROR ,out : f1 / f3 = ERROR(0/1)
+want : f1 / f4 =  3/10 ,out : f1 / f4 = 3/10
+
+关系运算符 > 测试
+want : f1 > f2 = true  ,out : true
+want : f1 > f4 = false ,out : false
+
+关系运算符 < 测试
+want : f1 < f2 = false ,out : false
+want : f1 < f4 = true  ,out : true
+
+关系运算符 >= 测试
+want : f1 >= f2 = true  ,out : true
+want : f1 >= f4 = false ,out : false
+
+关系运算符 <= 测试
+want : f1 <= f2 = false ,out : false
+want : f1 <= f4 = true  ,out : true
+
+关系运算符 != 测试
+want : f1 != f2 = true  ,out : true
+want : f1 != ff7= false ,out : false
+
+关系运算符 == 测试
+want : f1 == f2 = false ,out : false
+want : f1 == ff7 = true ,out : true
+
+输出运算符测试已在上述程序中完成.
